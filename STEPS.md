@@ -56,4 +56,10 @@ php artisan make:seeder SampleTableSeeder
 ## Debugging 
 [tinker][php artisan tinker] -> connects to the application from console 
 
-User::all(); All the entries under users table.
+Model::all(); All the entries under users table.
+
+Model::find($id); Find by id
+
+## Creating a new model
+
+php artisan make:model modelName -m : creating a model class and a migration
