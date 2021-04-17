@@ -32,6 +32,9 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
+        if (Auth::user()->type == 'SUPER_ADMIN') { // if the current role is Administrator
+            return redirect('/dashboard');
+        }
         return redirect()->intended(RouteServiceProvider::HOME);
     }
 
