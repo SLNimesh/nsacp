@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\QuestionsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,5 +25,10 @@ Route::get('/dashboard', function () {
 Route::get('/home', function () {
     return view('home');
 })->middleware(['auth'])->name('home');
+
+Route::resources([
+    'centers' => CenterController::class,
+    'forum' => QuestionsController::class,
+]);
 
 require __DIR__.'/auth.php';

@@ -8,7 +8,7 @@
     </head>
     <body class="antialiased">
         <div class="flex flex-col h-screen">
-            <header class="bg-white dark:bg-gray-800">
+            <header class="bg-white">
                 <div class="max-w-7xl mx-auto px-8">
                     <div class="flex items-center justify-between h-16">
                         <div class="flex items-center mt-2">
@@ -17,19 +17,19 @@
                             </a>
                             <div class="hidden md:block">
                                 <div class="ml-10 flex items-baseline space-x-4">
-                                    <a class="text-gray-800 dark:text-white hover:text-gray-800 dark:hover:text-white py-2.5 px-5 rounded-md text-base font-semibold" href="/#">
+                                    <a class="hover:bg-gray-700 rounded-full  bg-gray-800 inline-block text-sm font-medium text-white px-4 py-3 leading-none" href="/#">
                                         Home
                                     </a>
-                                    <a class="text-gray-300  hover:text-gray-800 dark:hover:text-white py-2.5 px-5 rounded-md text-base font-medium" href="/#">
+                                    <a class="hover:bg-gray-700 rounded-full  bg-gray-500 inline-block text-sm font-medium text-white px-4 py-3 leading-none" href="/#">
                                         Help Centers
                                     </a>
-                                    <a class="text-gray-300  hover:text-gray-800 dark:hover:text-white py-2.5 px-5 rounded-md text-base font-medium" href="/#">
+                                    <a class="hover:bg-gray-700 rounded-full  bg-gray-500 inline-block text-sm font-medium text-white px-4 py-3 leading-none" href="/#">
                                         Clinics
                                     </a>
-                                    <a class="text-gray-300  hover:text-gray-800 dark:hover:text-white py-2.5 px-5 rounded-md text-base font-medium" href="/#">
+                                    <a class="hover:bg-gray-700 rounded-full  bg-gray-500 inline-block text-sm font-medium text-white px-4 py-3 leading-none" href="/forum">
                                         Forum
                                     </a>
-                                    <a class="text-gray-300  hover:text-gray-800 dark:hover:text-white py-2.5 px-5 rounded-md text-base font-medium" href="/#">
+                                    <a class="hover:bg-gray-700 rounded-full  bg-gray-500 inline-block text-sm font-medium text-white px-4 py-3 leading-none" href="/#">
                                         About us
                                     </a>
                                 </div>
@@ -39,43 +39,7 @@
             </header>
             <main class="flex-1 overflow-y-auto p-5">
                 <div class="relative flex items-top justify-center dark:bg-gray-900 sm:items-center py-2 sm:pt-0">
-                @if (Route::has('login'))
-                    <div class="hidden font-bold fixed top-0 right-0 px-6 py-4 sm:block">
-                        @auth
-                            <a href="{{ url('/home') }}">
-                                <button type="button" class="focus:outline-none text-white text-sm py-2.5 px-5 rounded-xl bg-gradient-to-r from-blue-400 to-blue-600 transform hover:shadow-md">
-                                    My Account
-                                </button>
-                            </a>
-                            <form method="POST" action="{{ route('logout') }}" class="inline">
-                                @csrf
-                                
-                                <a :href="route('logout')"
-                                    onclick="event.preventDefault();
-                                                this.closest('form').submit();">
-                                    <button type="button" class="focus:outline-none text-white text-sm py-2.5 px-5 rounded-xl bg-gradient-to-r from-gray-600 to-gray-900 transform hover:shadow-md" >
-                                        Log out
-                                    </button>
-                                </a>
-                            </form>
-
-                        @else
-                            <a href="{{ route('login') }}">
-                                <button type="button" class="mr-1 focus:outline-none text-white text-sm py-2.5 px-5 rounded-xl bg-gradient-to-r from-blue-400 to-blue-600 transform hover:shadow-md">
-                                        Log in
-                                </button>
-                            </a>
-
-                            @if (Route::has('register'))
-                                <a href="{{ route('register') }}">
-                                    <button type="button" class="focus:outline-none text-white text-sm py-2.5 px-5 rounded-xl bg-gradient-to-r from-gray-600 to-gray-900 transform hover:shadow-md">
-                                        Register
-                                    </button>
-                                </a>
-                            @endif
-                        @endauth
-                    </div>
-                @endif
+                    <x-top-right-coner></x-top-right-coner>
 
                     <div class="max-w-sm bg-white border-2 p-6 rounded-md tracking-wide shadow-lg">
                         <div id="header" class="flex items-center mb-4"> 

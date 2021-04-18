@@ -53,6 +53,8 @@ inserting master-data into database tables
 
 php artisan make:seeder SampleTableSeeder
 
+php artisan migrate:refresh --step=1 : refreshing last migration step (or last 2, 3) 
+
 ## Debugging 
 [tinker][php artisan tinker] -> connects to the application from console 
 

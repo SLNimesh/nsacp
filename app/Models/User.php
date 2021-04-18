@@ -51,4 +51,12 @@ class User extends Authenticatable
         return $this->type;
     }
 
+    public function questions() {
+        return $this->hasMany(Question::class);
+    }
+
+    public function appointments() {
+        return $this->hasMany(Appointments::class);
+    }
+
 }

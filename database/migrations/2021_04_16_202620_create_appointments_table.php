@@ -26,6 +26,7 @@ class CreateAppointmentsTable extends Migration
             $table->timestamps();
 
             $table->index('channelDate_id');
+            $table->index('user_id');
         });
     }
 
