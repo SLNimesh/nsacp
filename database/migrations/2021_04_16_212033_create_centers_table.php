@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\Artisan;
 
 class CreateCentersTable extends Migration
 {
@@ -22,6 +23,10 @@ class CreateCentersTable extends Migration
             $table->string('contactNumber');
             $table->timestamps();
         });
+
+        Artisan::call('db:seed', [
+            '--class' => 'CentersTableSeeder',
+        ]);
     }
 
     /**
