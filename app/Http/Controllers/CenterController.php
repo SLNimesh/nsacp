@@ -15,6 +15,13 @@ class CenterController extends Controller
     public function index()
     {
         $centers = Center::all();
+        return view('centers', [
+            'centers' => $centers,
+        ]);
+    }
+
+    public function getAll() {
+        $centers = Center::all();
         return $centers;
     }
 
