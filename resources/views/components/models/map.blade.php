@@ -8,7 +8,7 @@
       <p class="text-lg font-semibold text-gray-500">Help Centers</p>
     </a>
   </div>
-  <div id="mapDiv" style="width: 450px; height: 750px" class="rounded-md"></div>
+  <div id="mapDiv" style="width: 500px; height: 750px" class="rounded-md"></div>
 </div>
 
 

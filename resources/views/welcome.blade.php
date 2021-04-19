@@ -19,10 +19,10 @@
                         </a>
                         <div class="hidden md:block">
                             <div class="ml-10 flex items-baseline space-x-4">
-                                <a class="hover:bg-gray-700 rounded-full  bg-gray-800 inline-block text-sm font-medium text-white px-4 py-3 leading-none" href="/#">
+                                <a class="hover:bg-gray-700 rounded-full  bg-gray-800 inline-block text-sm font-medium text-white px-4 py-3 leading-none" href="/">
                                     Home
                                 </a>
-                                <a class="hover:bg-gray-700 rounded-full  bg-gray-500 inline-block text-sm font-medium text-white px-4 py-3 leading-none" href="/#">
+                                <a class="hover:bg-gray-700 rounded-full  bg-gray-500 inline-block text-sm font-medium text-white px-4 py-3 leading-none" href="/centers">
                                     Help Centers
                                 </a>
                                 <a class="hover:bg-gray-700 rounded-full  bg-gray-500 inline-block text-sm font-medium text-white px-4 py-3 leading-none" href="/#">
@@ -38,10 +38,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </header>
         <main class="flex-1 overflow-y-auto p-2">
             <x-top-right-coner></x-top-right-coner>
-            <div class="grid grid-cols-3 gap-4 items-center justify-center dark:bg-gray-900 py-2 sm:pt-0 h-5/6">
+            <div class="grid grid-cols-3 gap-4 items-center justify-center py-2 sm:pt-0 h-5/6">
 
                 <div class="flex flex-col items-center justify-center bg-white p-6 tracking-wide w-full h-full">
                     <div class="flex flex-col items-center p-4">
@@ -71,6 +72,7 @@
                 </div>
 
             </div>
+            <!-- <x-models.services></x-models.services> -->
         </main>
         <footer class="py-2 bg-white text-right text-white">
             <div class="mr-4 text-center text-sm font-semibold text-red-500 sm:text-right sm:ml-0">

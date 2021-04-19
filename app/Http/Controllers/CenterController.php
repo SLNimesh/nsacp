@@ -43,7 +43,23 @@ class CenterController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'name' => 'required|string',
+            'address' => 'required|string',
+            'contactNumber' => 'required|string',
+            // 'latitude' => 'number',
+            // 'longitude' => 'number'
+        ]);
+
+        $center = new Center();
+        $center->name = $request->name;
+        $center->address = $request->address;
+        $center->contactNumber = $request->contactNumber;
+        $center->latitude = $request->latitude;
+        $center->longitude = $request->longitude;
+        $center->save();
+
+        return redirect("/centers");
     }
 
     /**
