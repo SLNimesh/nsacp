@@ -10,7 +10,21 @@
 <body>
     <x-top-right-coner></x-top-right-coner>
     <div class="min-w-screen bg-white min-h-screen flex items-center justify-center py-5">
-        <div class="w-full px-5 py-16 md:py-24 text-gray-800">
+        <div class="ml-16 flex flex-col items-center bg-white b-2 rounded-lg shadow-lg w-1/3 self-center p-8">
+            <h1 class="text-xl font-bold text-gray-700 p-2 pt-6">Overview of the National STD/AIDS Control Programme</h1>
+            <p class="text-sm font-semibold text-gray-500 p-2">The National STD/AIDS Control Programme (NSACP) of the Ministry of Health is the main government organization which coordinate the national response to sexually transmitted infections including HIV/AIDS in Sri Lanka. It collaborates with many national and international organizations such as the Global Fund to Fight Against AIDS, TB and Malaria (GFATM) and UN organizations while providing leadership and technical support to 34 island wide STD clinics and 23 ART centers.Furthermore, it provides quality STI and HIV laboratory services through a comprehensive laboratory network. National and subnational level monitoring and evaluation and surveillance are other important activities carried out by NSACP.
+                <br>
+                NSACP has achieved the task of providing best possible preventive and clinical services for key and vulnerable populationsas well as for the general population. In addition, it supports the National Institute of Infectious Diseases (NIID) of SriLanka to provide clinical care for HIV infected individuals, which functions as an ART center as well as a center providingclinical care for HIV infected individuals, outside the NSACP in Sri Lanka. The NSACP is working towards Ending AIDS by2025 and elimination of mother to child transmission of HIV and syphilis by 2019.</p>
+
+            <p class="text-md font-bold text-gray-400 pt-2">Vision</p>
+            <p class="text-sm font-semibold text-gray-500 p-2">Country free of new HIV infections, discrimination and AIDS-related deaths.
+            </p>
+            <p class="text-md font-bold text-gray-400 pt-2">Mission</p>
+            <p class="text-sm font-semibold text-gray-500 p-2">Prevent new HIV and sexually transmitted infections and provide comprehensive care and treatment services.
+            </p>
+
+        </div>
+        <div class="w-full px-5 py-8 text-gray-800">
             <div class="w-full max-w-6xl mx-auto">
                 <div class="text-center max-w-6xl mx-auto">
                     <h1 class="text-6xl font-bold mb-5 text-gray-600">Here's what the professionals<br>have to say.</h1>
