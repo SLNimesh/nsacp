@@ -27,6 +27,10 @@ Route::get('/home', function () {
     return view('home');
 })->middleware(['auth'])->name('home');
 
+Route::get('/about-us', function () {
+    return view('about');
+});
+
 Route::resources([
     'centers' => CenterController::class,
     'forum' => QuestionsController::class,

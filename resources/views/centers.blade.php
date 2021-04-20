@@ -11,9 +11,9 @@
     <x-top-right-coner></x-top-right-coner>
     <div class="grid grid-cols-4 gap-4 mt-20">
         <!-- First Column -->
-        <div class="flex flex-col items-center pt-12">
-            @auth
-            @if(Auth::user()->type == 'SUPER_ADMIN')
+        <div class="flex flex-col items-center pt-12"> 
+
+            @if(Auth::user() != null && Auth::user()->type == 'SUPER_ADMIN')
             <div class="m-4 flex flex-col items-center bg-white b-2 rounded-lg shadow-lg w-9/12">
                 <!-- Add New Center -->
                 <form method="POST" action="/centers" class="mt-4 p-2 w-10/12">
@@ -59,7 +59,6 @@
                     </div>
                 </form>
             </div>
-            @endauth
             @else
             <div class="m-4 flex flex-col items-center bg-white b-2 rounded-lg shadow-lg w-11/12">
                 <p class="text-lg font-bold text-gray-700 p-2 pt-6">Services provided by the help centers</p>
