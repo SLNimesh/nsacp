@@ -53,14 +53,15 @@
                 <p class="px-4 py-2 text-sm font-semibold text-gray-500">(This question has not been aswered yet.)</p>
                 @auth
                 @if(Auth::user()->type == 'SUPER_ADMIN')
-                <form method="PATCH" action="/forum/{{$question->id}}">
+                <form method="POST" action="{{ route('forum.update', $question->id) }}">
+                    @method('PATCH')
+                    @csrf
                     <div class="px-4 py-2 flex flex-col">
-                        <textarea name="answer" class="mt-2 bg-gray-100 p-3 h-30 border border-gray-300 outline-none focus:outline-none" spellcheck="false" placeholder="Type answer here."></textarea>
+                        <textarea name="answer" class="mt-2 bg-gray-100 p-3 h-30 border border-gray-300 outline-none focus:outline-none" spellcheck="false" placeholder="Type answer here." type="put"></textarea>
                     </div>
                     <button type="submit" name="update" class="ml-3 mb-2 focus:outline-none text-white text-sm py-2.5 px-5 rounded-xl bg-gradient-to-r from-blue-400 to-blue-600 transform hover:shadow-md">
                         Answer Question
                     </button>
-                    {{ csrf_field() }}
                 </form>
                 @endif
                 @endauth
@@ -70,7 +71,11 @@
                 @if(is_null($question->answer))
                 <button type="submit" class="ml-3 mb-2 focus:outline-none text-white text-sm py-2.5 px-5 rounded-xl bg-gradient-to-r from-gray-600 to-gray-900 transform hover:shadow-md">Edit</button>
                 @endif
-                <button type="submit" class="ml-1 mb-2 focus:outline-none text-white text-sm py-2.5 px-5 rounded-xl bg-gradient-to-r from-gray-600 to-gray-900 transform hover:shadow-md">Delete</button>
+                <form method="POST" action="{{ route('forum.destroy', $question->id) }}" class="inline">
+                    @method('DELETE')
+                    @csrf
+                    <button type="submit" class="ml-3 mb-2 focus:outline-none text-white text-sm py-2.5 px-5 rounded-xl bg-gradient-to-r from-gray-600 to-gray-900 transform hover:shadow-md">Delete</button>
+                </form>
                 @endif
                 @endauth
 

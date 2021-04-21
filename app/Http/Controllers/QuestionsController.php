@@ -85,21 +85,13 @@ class QuestionsController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $this->validate($request, [
+            'answer' => 'required|string'
+        ]);
         $que = Question::findOrFail($id);
-        if (property_exists($request, 'question')) {
-            $this->validate($request, [
-                'question' => 'required|string'
-            ]);
-            $que->question = $request->question;
-        }  
-        if (property_exists($request, 'answer')) {
-            $this->validate($request, [
-                'answer' => 'required|string'
-            ]);
-            $que->answer = $request->answer;
-        }
+        $que->answer = $request->answer;
         $que->save();
-        return redirect('/forum');
+        return redirect('/forum')->with('success', 'Answer updated successfully');
     }
 
     /**
@@ -110,6 +102,8 @@ class QuestionsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $que = Question::findOrFail($id);
+        $que->delete();
+        return redirect('/forum')->with('success', 'Question deleted successfully');
     }
 }
