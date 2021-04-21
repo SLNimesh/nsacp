@@ -25,7 +25,7 @@
                                 <a class="text-black-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-full text-sm font-medium" href="/centers">
                                     Help Centers
                                 </a>
-                                <a class="text-black-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-full text-sm font-medium"  href="/#">
+                                <a class="text-black-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-full text-sm font-medium" href="/#">
                                     Clinics
                                 </a>
                                 <a class="text-black-700 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-full text-sm font-medium" href="/forum">
@@ -54,12 +54,16 @@
                         </div>
                     </div>
                     <div class="px-16">
-                        <q class="text-gray-600">The National STD/AIDS Control Programme (NSACP) of the Ministry of Health is the main government organization which coordinates the national response to sexually transmitted infections including HIV/AIDS in Sri Lanka. It collaborates with many national and international organizations such as the Global Fund to Fight Against AIDS, TB, and Malaria (GFATM) and UN organizations while providing leadership and technical support to 34 islandwide STD clinics and 23 ART centers</q>
+                        <p class="text-gray-600 text-center">"The National STD/AIDS Control Programme (NSACP) of the Ministry of Health is the main government organization which coordinates the national response to sexually transmitted infections including HIV/AIDS in Sri Lanka. It collaborates with many national and international organizations such as the Global Fund to Fight Against AIDS, TB, and Malaria (GFATM) and UN organizations while providing leadership and technical support to 34 islandwide STD clinics and 23 ART centers"</p>
                     </div>
                     <div class="mt-6">
-                        <button type="button" class="focus:outline-none text-white text-sm py-2.5 px-5 rounded-xl bg-gradient-to-r from-red-400 to-red-600 transform hover:shadow-md">
-                            Read More
-                        </button>
+                        <a href="/about-us" target="_blank">
+                            <button type="button" class="focus:outline-none text-white text-sm py-2.5 px-5 rounded-xl bg-gradient-to-r from-red-400 to-red-600 transform hover:shadow-md">
+                                Read More
+                            </button></a>
+                    </div>
+                    <div class="pt-4">
+                        <x-models.simple-gallery></x-models.simple-gallery>
                     </div>
                 </div>
 
@@ -69,7 +73,7 @@
                         <p class="text-lg font-semibold">Local statistics on STDs</p>
                         <p class="text-sm">by the end of 2020</p>
                     </div>
-                    <div id="wrapper" class="max-w-xl px-4 py-4 mx-auto">
+                    <div id="wrapper" class="max-w-xl px-4 py-4 mx-auto mb-4">
                         <div class="sm:grid sm:h-32 sm:grid-flow-row sm:gap-4 sm:grid-cols-3">
                             <div class="flex flex-col justify-center px-8 py-4 bg-white border border-gray-300 rounded">
                                 <div>
@@ -90,7 +94,8 @@
                                     <div>
                                         <p class="flex items-center justify-end text-green-500 text-md">
                                             <span class="font-bold">11%</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path class="heroicon-ui" d="M20 9a1 1 0 012 0v8a1 1 0 01-1 1h-8a1 1 0 010-2h5.59L13 10.41l-3.3 3.3a1 1 0 01-1.4 0l-6-6a1 1 0 011.4-1.42L9 11.6l3.3-3.3a1 1 0 011.4 0l6.3 6.3V9z"/></svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                                <path class="heroicon-ui" d="M20 9a1 1 0 012 0v8a1 1 0 01-1 1h-8a1 1 0 010-2h5.59L13 10.41l-3.3 3.3a1 1 0 01-1.4 0l-6-6a1 1 0 011.4-1.42L9 11.6l3.3-3.3a1 1 0 011.4 0l6.3 6.3V9z" /></svg>
                                         </p>
                                     </div>
                                     <p class="text-3xl font-semibold text-center text-gray-800">97</p>
@@ -104,20 +109,66 @@
                                         <p class="flex items-center justify-end text-red-500 text-md">
                                             <span class="font-bold">2%</span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                                            <path class="heroicon-ui" d="M20 15a1 1 0 002 0V7a1 1 0 00-1-1h-8a1 1 0 000 2h5.59L13 13.59l-3.3-3.3a1 1 0 00-1.4 0l-6 6a1 1 0 001.4 1.42L9 12.4l3.3 3.3a1 1 0 001.4 0L20 9.4V15z" /></svg>
+                                                <path class="heroicon-ui" d="M20 15a1 1 0 002 0V7a1 1 0 00-1-1h-8a1 1 0 000 2h5.59L13 13.59l-3.3-3.3a1 1 0 00-1.4 0l-6 6a1 1 0 001.4 1.42L9 12.4l3.3 3.3a1 1 0 001.4 0L20 9.4V15z" /></svg>
                                         </p>
                                     </div>
                                     <p class="text-3xl font-semibold text-center text-gray-800">173</p>
                                     <p class="text-lg text-center text-gray-500">Deaths</p>
-                                    
+
                                 </div>
                                 <p class="text-xs text-gray-500">2019 - 2020</p>
                             </div>
                         </div>
                     </div>
-                    <div>
-
+                    <div class="px-16 text-gray-600 mt-8">
+                        <p class="text-lg font-semibold">Annual Reports</p>
+                        <p class="text-sm">courtesy of aidscontrol.gov.lk</p>
                     </div>
+                    <div class="flex mt-4 items-center bg-gradient-to-r from-gray-500 to-gray-800 px-3 py-3 rounded-lg">
+                        <div class="h-32 w-32 relative cursor-pointer mx-2">
+                            <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+                            <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                                <div class="h-full w-full bg-white rounded-lg shadow-2xl flex items-center justify-center">
+                                    <a href="https://aidscontrol.gov.lk/images/pdfs/publications/NSACP_Annual-Report_2019.pdf">
+                                        <p class="text-2xl font-semibold text-gray-500 p-2">2020</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-32 w-32 relative cursor-pointer mx-2">
+                            <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+                            <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                                <div class="h-full w-full bg-white rounded-lg shadow-2xl flex items-center justify-center">
+                                    <a href="https://aidscontrol.gov.lk/images/pdfs/publications/NSACP_Annual-report_-2018_updated-PDF-8.8.2019.pdf">
+                                        <p class="text-2xl font-semibold text-gray-500 p-2">2019</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-32 w-32 relative cursor-pointer mx-2">
+                            <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+                            <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                                <div class="h-full w-full bg-white rounded-lg shadow-2xl flex items-center justify-center">
+                                    <a href="https://aidscontrol.gov.lk/images/pdfs/publications/Annual.report_NSACP.2017updated_July23.pdf">
+                                        <p class="text-2xl font-semibold text-gray-500 p-2">2018</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-32 w-32 relative cursor-pointer mx-2">
+                            <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+                            <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                                <div class="h-full w-full bg-white rounded-lg shadow-2xl flex items-center justify-center">
+                                    <a href="https://aidscontrol.gov.lk/images/pdfs/publications/Annual.report_NSACP.2017updated_July23.pdf">
+                                        <p class="text-2xl font-semibold text-gray-500 p-2">2017</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="mt-4 mr-8 focus:outline-none text-white text-sm py-2.5 px-5 rounded-xl  bg-gradient-to-r from-blue-400 to-blue-600 transform hover:shadow-md self-end">
+                        View All
+                    </button>
                 </div>
 
                 <div class="flex justify-end w-full">
