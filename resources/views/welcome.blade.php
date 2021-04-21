@@ -124,43 +124,43 @@
                         <p class="text-lg font-semibold">Annual Reports</p>
                         <p class="text-sm">courtesy of aidscontrol.gov.lk</p>
                     </div>
-                    <div class="flex mt-4 items-center bg-gradient-to-r from-gray-500 to-gray-800 px-3 py-3 rounded-lg">
+                    <div class="flex mt-4 items-center px-3 py-3 rounded-lg">
                         <div class="h-32 w-32 relative cursor-pointer mx-2">
-                            <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+                            <div class="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-800 opacity-25 rounded-lg shadow-2xl"></div>
                             <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
-                                <div class="h-full w-full bg-white rounded-lg shadow-2xl flex items-center justify-center">
+                                <div class="h-full w-full bg-gradient-to-r from-gray-600 to-gray-800 rounded-lg shadow-2xl flex items-center justify-center">
                                     <a href="https://aidscontrol.gov.lk/images/pdfs/publications/NSACP_Annual-Report_2019.pdf">
-                                        <p class="text-2xl font-semibold text-gray-500 p-2">2020</p>
+                                        <p class="text-2xl font-semibold text-white p-2">2020</p>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="h-32 w-32 relative cursor-pointer mx-2">
-                            <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+                            <div class="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-800 opacity-25 rounded-lg shadow-2xl"></div>
                             <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
-                                <div class="h-full w-full bg-white rounded-lg shadow-2xl flex items-center justify-center">
+                                <div class="h-full w-full bg-gradient-to-r from-gray-600 to-gray-800 rounded-lg shadow-2xl flex items-center justify-center">
                                     <a href="https://aidscontrol.gov.lk/images/pdfs/publications/NSACP_Annual-report_-2018_updated-PDF-8.8.2019.pdf">
-                                        <p class="text-2xl font-semibold text-gray-500 p-2">2019</p>
+                                        <p class="text-2xl font-semibold text-white p-2">2019</p>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="h-32 w-32 relative cursor-pointer mx-2">
-                            <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+                            <div class="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-800 opacity-25 rounded-lg shadow-2xl"></div>
                             <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
-                                <div class="h-full w-full bg-white rounded-lg shadow-2xl flex items-center justify-center">
+                                <div class="h-full w-full bg-gradient-to-r from-gray-600 to-gray-800 rounded-lg shadow-2xl flex items-center justify-center">
                                     <a href="https://aidscontrol.gov.lk/images/pdfs/publications/Annual.report_NSACP.2017updated_July23.pdf">
-                                        <p class="text-2xl font-semibold text-gray-500 p-2">2018</p>
+                                        <p class="text-2xl font-semibold text-white p-2">2018</p>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="h-32 w-32 relative cursor-pointer mx-2">
-                            <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+                            <div class="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-800 opacity-25 rounded-lg shadow-2xl"></div>
                             <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
-                                <div class="h-full w-full bg-white rounded-lg shadow-2xl flex items-center justify-center">
+                                <div class="h-full w-full bg-gradient-to-r from-gray-600 to-gray-800 rounded-lg shadow-2xl flex items-center justify-center">
                                     <a href="https://aidscontrol.gov.lk/images/pdfs/publications/Annual.report_NSACP.2017updated_July23.pdf">
-                                        <p class="text-2xl font-semibold text-gray-500 p-2">2017</p>
+                                        <p class="text-2xl font-semibold text-white p-2">2017</p>
                                     </a>
                                 </div>
                             </div>
