@@ -11,7 +11,7 @@
     <x-top-right-coner></x-top-right-coner>
     <div class="grid grid-cols-4 gap-4 mt-20">
         <!-- First Column -->
-        <div class="flex flex-col items-center pt-12"> 
+        <div class="ml-4 flex flex-col items-center pt-12"> 
 
             @if(Auth::user() != null && Auth::user()->type == 'SUPER_ADMIN')
             <div class="m-4 flex flex-col items-center bg-white b-2 rounded-lg shadow-lg w-9/12">
@@ -60,10 +60,10 @@
                 </form>
             </div>
             @else
-            <div class="m-4 flex flex-col items-center bg-white b-2 rounded-lg shadow-lg w-11/12">
+            <div class="m-4 flex flex-col items-center bg-white border rounded-lg shadow-lg w-11/12 px-8">
                 <p class="text-lg font-bold text-gray-700 p-2 pt-6">Services provided by the help centers</p>
 
-                <p class="text-md font-bold text-red-400 pt-4 pb-2">Management of Sexually Transmitted Infections (STI)</p>
+                <p class="text-md font-bold text-red-400 pt-4 pb-2 text-center">Management of Sexually Transmitted Infections (STI)</p>
                 <div class="self-start ml-12">
                     <ul class="list-disc text-sm font-semibold text-gray-500">
                         <li>Counselling services and health education for STI</li>
@@ -131,7 +131,7 @@
                     </div>
                     @endif
                     <p class="text-sm font-semibold text-gray-500 p-1">{{$center->address}}</p>
-                    <div class="flex items-center mt-3">
+                    <div class="flex items-center mt-auto">
                         <img src="/img/telephone.png" alt="tele" class="w-10 h-10">
                         <p class="text-2xl font-semibold text-gray-500 p-1"> +94 {{$center->contactNumber}}</p>
                     </div>

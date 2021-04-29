@@ -65,3 +65,7 @@ Model::find($id); Find by id
 ## Creating a new model
 
 php artisan make:model modelName -m : creating a model class and a migration
+
+## Logging in artisan shell 
+
+error_log('what ever here');

@@ -5,7 +5,7 @@
   <div class="flex flex-row p-2 items-center">
     <img class="w-6 h-6 mr-2" src="/img/pin.png" alt="">
     <a href="/help-centers">
-      <p class="text-lg font-semibold text-gray-500">Help Centers</p>
+      <p class="text-lg font-semibold text-gray-500">Our Help Centers</p>
     </a>
   </div>
   <div id="mapDiv" style="width: 500px; height: 750px" class="rounded-md"></div>

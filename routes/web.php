@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\AppointmentsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\QuestionsController;
 use App\Http\Controllers\CenterController;
+use App\Http\Controllers\ChannelingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +25,8 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'role'])->name('dashboard');
 
+Route::get('/channeling', [ChannelingController::class, 'index'])->middleware(['auth'])->name('channels');
+
 Route::get('/home', function () {
     return view('home');
 })->middleware(['auth'])->name('home');
@@ -31,9 +35,15 @@ Route::get('/about-us', function () {
     return view('about');
 });
 
+Route::get('/meet-your-doctor', function () {
+    return view('appointments');
+})->middleware(['auth'])->name('appointments');
+
 Route::resources([
     'centers' => CenterController::class,
     'forum' => QuestionsController::class,
+    'appointments' => AppointmentsController::class,
+    'channels' => ChannelingController::class,
 ]);
 
 require __DIR__.'/auth.php';

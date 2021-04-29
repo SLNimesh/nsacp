@@ -124,8 +124,8 @@
                         <p class="text-lg font-semibold">Annual Reports</p>
                         <p class="text-sm">courtesy of aidscontrol.gov.lk</p>
                     </div>
-                    <div class="flex mt-4 items-center px-3 py-3 rounded-lg">
-                        <div class="h-32 w-32 relative cursor-pointer mx-2">
+                    <div class="flex mt-4 items-center px-3 py-2 rounded-lg">
+                        <div class="h-28 w-24 relative cursor-pointer mx-2">
                             <div class="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-800 opacity-25 rounded-lg shadow-2xl"></div>
                             <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
                                 <div class="h-full w-full bg-gradient-to-r from-gray-600 to-gray-800 rounded-lg shadow-2xl flex items-center justify-center">
@@ -135,7 +135,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="h-32 w-32 relative cursor-pointer mx-2">
+                        <div class="h-28 w-24 relative cursor-pointer mx-2">
                             <div class="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-800 opacity-25 rounded-lg shadow-2xl"></div>
                             <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
                                 <div class="h-full w-full bg-gradient-to-r from-gray-600 to-gray-800 rounded-lg shadow-2xl flex items-center justify-center">
@@ -145,7 +145,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="h-32 w-32 relative cursor-pointer mx-2">
+                        <div class="h-28 w-24 relative cursor-pointer mx-2">
                             <div class="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-800 opacity-25 rounded-lg shadow-2xl"></div>
                             <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
                                 <div class="h-full w-full bg-gradient-to-r from-gray-600 to-gray-800 rounded-lg shadow-2xl flex items-center justify-center">
@@ -155,7 +155,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="h-32 w-32 relative cursor-pointer mx-2">
+                        <div class="h-28 w-24 relative cursor-pointer mx-2">
                             <div class="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-800 opacity-25 rounded-lg shadow-2xl"></div>
                             <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
                                 <div class="h-full w-full bg-gradient-to-r from-gray-600 to-gray-800 rounded-lg shadow-2xl flex items-center justify-center">
@@ -166,7 +166,7 @@
                             </div>
                         </div>
                     </div>
-                    <button type="button" class="mt-4 mr-8 focus:outline-none text-white text-sm py-2.5 px-5 rounded-xl  bg-gradient-to-r from-blue-400 to-blue-600 transform hover:shadow-md self-end">
+                    <button type="button" class="mt-2 mr-24 focus:outline-none text-white text-sm py-2.5 px-5 rounded-xl  bg-gradient-to-r from-blue-400 to-blue-600 transform hover:shadow-md self-end">
                         View All
                     </button>
                 </div>
