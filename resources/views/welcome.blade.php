@@ -69,7 +69,7 @@
 
                 <div class="flex h-full w-full flex-col items-center justify-center">
                     <!-- stat - component -->
-                    <div class="px-16 text-gray-600 ">
+                    <div class="px-16 text-gray-600 mt-2">
                         <p class="text-lg font-semibold">Local statistics on STDs</p>
                         <p class="text-sm">by the end of 2020</p>
                     </div>
@@ -120,7 +120,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="px-16 text-gray-600 mt-8">
+                    <div class="px-16 text-gray-600 mt-4">
                         <p class="text-lg font-semibold">Annual Reports</p>
                         <p class="text-sm">courtesy of aidscontrol.gov.lk</p>
                     </div>
@@ -169,6 +169,21 @@
                     <button type="button" class="mt-2 mr-24 focus:outline-none text-white text-sm py-2.5 px-5 rounded-xl  bg-gradient-to-r from-blue-400 to-blue-600 transform hover:shadow-md self-end">
                         View All
                     </button>
+                    <!-- E-channeling component -->
+                    <div class="flex w-10/12 h-56 bg-white border border-blue-500 shadow-lg rounded-lg mt-8 items-center py-8 px-4">
+                        <div class="w-1/3 mb-auto">
+                            <img class="p-4 w-full" src="/img/stethoscope.png" alt="">
+                        </div>
+                        <div class="flex flex-col w-2/3 h-4/5 mb-auto p-1">
+                            <p class="text-4xl font-bold text-blue-900 rounded-full mb-1">E-Channeling</p>
+                            <p class="text-sm text-gray-600  w-full">Channel your doctor online. You can make appointments on a doctor of your choice. We guarantee to always maintain your privacy. This service is free of charge.</p>
+                            <a href="/channeling" target="_blank" class="mt-auto self-end">
+                                <button type="button" class="focus:outline-none text-white text-sm py-2.5 px-5 rounded-xl bg-gradient-to-r from-green-400 to-green-600 transform hover:shadow-md">
+                                    Meet Your Doctor
+                                </button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="flex justify-end w-full">

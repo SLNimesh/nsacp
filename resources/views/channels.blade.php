@@ -69,27 +69,35 @@
         </div>
         @endif
     </div>
+    @if(Auth::user()->type != 'SUPER_ADMIN')
+    <img src="/img/doctor.png" alt="" class="w-32 h-32 mb-4">
     <p class="text-3xl font-bold text-gray-600 mb-4">Meet You Doctor</p>
     <p class="text-lg font-semibold text-gray-500 mb-12 mx-56 text-center">Welcome to e-channeling section of NSACP. It's never too early to get in touch with experienced medical personnel. Our services provides you the opportunity to contact a doctor of your choice and have your spot reserved on a day of your choice.</p>
+    @else
+    <p class="text-xl font-bold text-gray-600 mb-4">All channeling schedules</p>
+    @endif
     <div class="grid grid-cols-6 w-10/12 mx-20 gap-2">
         @foreach($channels as $cha)
         <div class="m-1 flex flex-col items-center bg-white b-2 rounded-lg shadow-lg w-auto h-60 p-4 text-center border">
             <p class="text-md font-bold text-gray-700 p-1">{{$cha->doctor}}</p>
             <p class="text-sm font-bold text-gray-500 p-1">{{$cha->venue}}</p>
-            <p class="text-xl font-bold text-indigo-500 mt-auto">{{ strtoupper($cha->dayOfWeek)}}</p>
-            <p class="text-sm font-semibold text-blue-500 mt-1 p-1 rounded-full">{{ date('h:i A', strtotime($cha->time)) }}</p>
-            @if(Auth::user() != null && Auth::user()->type == 'SUPER_ADMIN')
-                <div class="p-1 pb-2 self-center mt-auto">
-                    <div>
-                        <button type="submit" class="ml-3 focus:outline-none text-white text-sm py-2.5 px-5 rounded-xl bg-gradient-to-r from-gray-600 to-gray-900 transform hover:shadow-md">Edit</button>
+            <p class="text-2xl font-bold text-indigo-500 tracking-wider mt-auto">{{ strtoupper($cha->dayOfWeek)}}</p>
+            <p class="text-sm font-semibold text-blue-400 mt-1 p-1 rounded-full">{{ date('h:i A', strtotime($cha->time)) }} onwards</p>
+            @if(Auth::user()->type == 'SUPER_ADMIN')
+            <div class="p-1 pb-2 self-center mt-auto">
+                <div>
+                    <button type="submit" class="ml-3 focus:outline-none text-white text-sm py-2.5 px-5 rounded-xl bg-gradient-to-r from-gray-600 to-gray-900 transform hover:shadow-md">Edit</button>
 
-                        <button type="submit" class="ml-1 focus:outline-none text-white text-sm py-2.5 px-5 rounded-xl bg-gradient-to-r from-red-400 to-red-600 transform hover:shadow-md">Delete</button>
-                    </div>
+                    <button type="submit" class="ml-1 focus:outline-none text-white text-sm py-2.5 px-5 rounded-xl bg-gradient-to-r from-red-400 to-red-600 transform hover:shadow-md">Delete</button>
                 </div>
+            </div>
             @else
             @if($cha->status == "ACTIVE")
-            <a class="bg-green-500 hover:shadow-md hover:bg-green-600 text-white px-3 py-2 rounded-full text-md font-semibold mt-auto" href="/centers">
-                Reserve
+            <a class="bg-green-500 hover:shadow-md hover:bg-green-600 text-white px-3 py-2 rounded-full text-md font-semibold mt-auto" href="/appointments">
+            <div class="flex items-center pr-2">
+                <img src="/img/booking.png" alt="" class="w-6 h-6 mx-2">
+                <span> Reserve </span>
+            </div>
             </a>
             @else
             <p class="bg-green-700 hover:text-white px-3 py-2 rounded-full text-md font-semibold">Out of order</p>
