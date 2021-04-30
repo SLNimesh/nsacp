@@ -93,7 +93,7 @@
             </div>
             @else
             @if($cha->status == "ACTIVE")
-            <a class="bg-green-500 hover:shadow-md hover:bg-green-600 text-white px-3 py-2 rounded-full text-md font-semibold mt-auto" href="/appointments">
+            <a class="bg-green-500 hover:shadow-md hover:bg-green-600 text-white px-3 py-2 rounded-full text-md font-semibold mt-auto" href="/meet-your-doctor/{{$cha->id}}" target="_blank">
             <div class="flex items-center pr-2">
                 <img src="/img/booking.png" alt="" class="w-6 h-6 mx-2">
                 <span> Reserve </span>

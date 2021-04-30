@@ -70,7 +70,8 @@ class CenterController extends Controller
      */
     public function show($id)
     {
-        //
+        $center = Center::where('name', $id)->get();
+        return $center;
     }
 
     /**

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Channel;
+use App\Models\ChannelDate;
 use Illuminate\Http\Request;
 
 class AppointmentsController extends Controller
@@ -45,7 +47,12 @@ class AppointmentsController extends Controller
      */
     public function show($id)
     {
-        //
+        $channel = Channel::findOrFail($id);
+        $dates = $channel->channelDate();
+        return view('appointments', [
+            'channel' => $channel,
+            'dates' => $dates,
+        ]);
     }
 
     /**
