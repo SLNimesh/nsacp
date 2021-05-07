@@ -12,7 +12,7 @@
     <div class="grid grid-cols-2 py-8 px-16 items-center w-screen h-screen bg-gray-100">
         
         <div class="flex flex-col mt-8 ml-12 bg-white border shadow-lg rounded-md px-6 py-8">
-            <p class="text-2xl font-semibold text-gray-500 self-center mb-4">Channeling schedule</p>
+            <p class="text-2xl font-semibold text-gray-500 self-center mb-4">Channeling Schedule</p>
             <div class="flex flex-col w-full h-full">
                 <p class="font-semibold text-gray-600 text-white bg-gray-50 mb-1 px-2">Doctor</p>
                 <p class="text-3xl font-bold text-gray-700 mb-2">{{$channel->doctor}}</p>
@@ -36,6 +36,7 @@
         </div>
 
         <div class="flex flex-col w-2/3 justify-self-center">
+            <p class="text-2xl font-semibold text-gray-500 self-center mb-4">Channeling Dates</p>
             <div class=" overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
                     <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
@@ -71,7 +72,7 @@
                                         {{ $date->currentAppointments}}
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                        <a href="#" class="hover:bg-gray-700 rounded-full  bg-gray-800 inline-block text-sm font-medium text-white px-4 py-3 leading-none">Reserve</a>
+                                        <a href="/make-reservation/{{$date->id}}" class="hover:bg-gray-700 rounded-full  bg-gray-800 inline-block text-sm font-medium text-white px-4 py-3 leading-none">Reserve</a>
                                     </td>
                                 </tr>
                                 @endforeach
