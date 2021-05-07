@@ -19,7 +19,7 @@ class CreateChannelsTable extends Migration
             $table->timeTz('time', $precision = 0);
             $table->string('doctor');
             $table->string('venue');
-            $table->string('status', ['ACTIVE, EXPIRED'])->default('ACTIVE');
+            $table->string('status')->default('ACTIVE');
             $table->smallInteger('maximumCapacity'); 
             $table->timestamps();
         });

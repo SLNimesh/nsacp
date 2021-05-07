@@ -69,3 +69,8 @@ php artisan make:model modelName -m : creating a model class and a migration
 ## Logging in artisan shell 
 
 error_log('what ever here');
+
+## GIT
+ 
+git remote add [origin] <url> : add remote origin
+git push [origin] master: push changes

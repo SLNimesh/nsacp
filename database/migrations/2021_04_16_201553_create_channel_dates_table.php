@@ -17,7 +17,7 @@ class CreateChannelDatesTable extends Migration
             $table->id();
             $table->unsignedBigInteger('channel_id');
             $table->date('date');
-            $table->string('status', ['OPEN, CLOSED, PENDING'])->default('OPEN');
+            $table->string('status')->default('OPEN');
             $table->smallInteger('currentAppointments')->default(0);
             $table->smallInteger('maximumCapacity');
             $table->timestamps();
