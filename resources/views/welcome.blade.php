@@ -191,7 +191,6 @@
                 </div>
 
             </div>
-            <!-- <x-models.services></x-models.services> -->
         </main>
         <footer class="py-2 bg-white text-right text-white">
             <div class="mr-4 text-center text-sm font-semibold text-red-500 sm:text-right sm:ml-0">
