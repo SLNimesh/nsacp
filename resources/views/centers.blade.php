@@ -107,7 +107,7 @@
             @endif
         </div>
         <div class="flex flex-col items-center mt-4 w-full col-span-3">
-            <p class="text-md font-semibold text-gray-700 p-4">All the govenrment help centers under NSACP</p>
+            <p class="text-md font-semibold text-gray-700 p-4">All the government help centers under NSACP</p>
             <div class="grid grid-cols-4 gap-2 mr-16">
                 @foreach(app(App\Http\Controllers\CenterController::class)->getAll() as $center)
                 <div class="m-1 flex flex-col items-center bg-white b-2 rounded-lg shadow-lg w-auto h-60 p-4 text-center">
