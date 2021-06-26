@@ -1,5 +1,11 @@
 <p align="center"><img src="public/img/horizontal_logo.png" width="400"></a></p>
 
+## **Demo**
+
+![ ](demo/Landing720.gif)
+
+*Click [here](demo/demo.md) for more!*
+
 ## Running project after cloning 
 
 - make sure you have all the pre-requisites 
