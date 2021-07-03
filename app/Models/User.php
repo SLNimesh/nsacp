@@ -56,7 +56,7 @@ class User extends Authenticatable
     }
 
     public function appointments() {
-        return $this->hasMany(Appointments::class);
+        return $this->hasMany(Appointment::class)->orderBy('created_at', 'desc');
     }
 
 }

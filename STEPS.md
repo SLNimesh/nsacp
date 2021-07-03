@@ -1,4 +1,4 @@
-<p align="center"><img src="public/img/full_logo.png" width="200"></a></p>
+<p align="center"><img src="public/img/full_logo.png" width="200"></p>
 
 ## Installation
 Prerequisites for development with laravel

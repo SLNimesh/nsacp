@@ -25,6 +25,9 @@
                     <x-nav-link :href="'/forum'" :active="request()->routeIs('forum')">
                         {{ __('Forum') }}
                     </x-nav-link>
+                    <x-nav-link :href="'/channeling'" :active="request()->routeIs('forum')">
+                        {{ __('Channeling') }}
+                    </x-nav-link>
                 </div>
             </div>
 

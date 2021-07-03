@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\QuestionsController;
 use App\Http\Controllers\CenterController;
 use App\Http\Controllers\ChannelingController;
+use App\Http\Controllers\ReservationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,14 +38,14 @@ Route::get('/channeling', [ChannelingController::class, 'index'])->middleware(['
 
 Route::get('/meet-your-doctor/{id}', [AppointmentsController::class, 'show'])->middleware(['auth'])->name('appointments');
 
-//change this to ReservationController
-Route::get('/make-reservation/{id}', [AppointmentsController::class, 'show'])->middleware(['auth'])->name('appointments');
+Route::get('/make-reservation/{id}', [ReservationController::class, 'show'])->middleware(['auth'])->name('reserve');
 
 Route::resources([
     'centers' => CenterController::class,
     'forum' => QuestionsController::class,
     'appointments' => AppointmentsController::class,
     'channels' => ChannelingController::class,
+    'reservations' => ReservationController::class
 ]);
 
 require __DIR__.'/auth.php';

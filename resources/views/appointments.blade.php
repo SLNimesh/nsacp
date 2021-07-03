@@ -9,9 +9,9 @@
 
 <body >
     <x-top-right-coner></x-top-right-coner>
-    <div class="grid grid-cols-2 py-8 px-16 items-center w-screen h-screen bg-gray-100">
+    <div class="grid grid-cols-2 py-8 gap-4 px-16 items-center w-screen h-screen bg-gray-100">
         
-        <div class="flex flex-col mt-8 ml-12 bg-white border shadow-lg rounded-md px-6 py-8">
+        <div class="flex flex-col m-4 bg-white border shadow-lg rounded-md px-6 py-8 justify-self-end">
             <p class="text-2xl font-semibold text-gray-500 self-center mb-4">Channeling Schedule</p>
             <div class="flex flex-col w-full h-full">
                 <p class="font-semibold text-gray-600 text-white bg-gray-50 mb-1 px-2">Doctor</p>
@@ -35,7 +35,7 @@
             </div>
         </div>
 
-        <div class="flex flex-col w-2/3 justify-self-center">
+        <div class="flex flex-col justify-self-start m-8">
             <p class="text-2xl font-semibold text-gray-500 self-center mb-4">Channeling Dates</p>
             <div class=" overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
